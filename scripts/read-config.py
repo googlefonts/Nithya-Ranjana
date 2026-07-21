@@ -34,7 +34,7 @@ for line in data.splitlines():
     if toggle:
         m = re.match(r"^\s*-\s*(.*)", line)
         if m:
-            sources.append("sources/" + m[1])
+            sources.append("Sources/" + m[1])
         else:
             toggle = False
 if sources:
